@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+
+body{
+    background-image: url(./assigns/336eccdfd0f5a053a89f8705e4561356.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    margin: 35px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    padding-top: 4px;
+    width: 350px;
+    height: 590px;
+    background-color: #807ab1e1;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #403c62;
+}
+
+.button {
+    border: none;
+    display: flex;
+    width: 250px;
+    border-radius: 30px;
+    margin: 15px auto;
+    cursor: pointer;
+    border: 1px solid rgb(232, 232, 232);
+}
+
+.img, .butimg{
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    background-color: #ffffff00;
+    cursor: pointer;
+}
+
+.butimg{
+    border: none;
+    margin-top: 12px;
+}
+
+.boxen p,
+.boxth p{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+}
+
+p{
+    padding: 10px 0;
+    margin: auto;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.boxsmall {
+    box-shadow: 3px 3px 5px #493860;
+    text-align: center;
+    width: 350px;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #451f75;
+    border-radius: 15px;
+    color: white;
+    
+}
+
+.button:hover, .button:active{
+    background-image: linear-gradient(to bottom right, rgb(21, 6, 91), rgb(98, 67, 136),rgb(216, 218, 180));
+    transition: 0.3s;
+    width: 280px;
+    padding: 5px 0;
+    border: none;
+    color: white;
+    box-shadow: 2px 3px 5px rgb(83, 81, 81);
+}
+
+
+
