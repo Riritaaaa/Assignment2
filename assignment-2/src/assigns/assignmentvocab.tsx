@@ -97,7 +97,6 @@ export default function AssignmentVocab() {
     return () => clearTimeout(timer);
   }, [thaiWords]);
 
-
   useEffect(() => {
     const timer = setTimeout(() => {
       const englishWordToRemoveIndex = englishWords.findIndex(
@@ -182,7 +181,6 @@ export default function AssignmentVocab() {
             ))}
           </div>
         </div>
-        
       </div>
     </>
   );

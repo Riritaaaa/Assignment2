@@ -9,6 +9,7 @@ export default defineConfig({
     alias: {
       "@assigns": path.resolve(__dirname, "src/assigns"),
     },
+    extensions: ['.ts', '.tsx', '.js']
   },
 
   server: {

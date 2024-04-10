@@ -20,23 +20,16 @@ body{
     justify-content: space-between;
 }
 .box {
-    padding-top: 4px;
+    background: rgba(255, 255, 255, 0.141);
+    border-radius: 16px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.089);
     width: 350px;
-    height: 590px;
-    background-color: #807ab1e1;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px #403c62;
+    min-height: 590px;
 }
 
-.button {
-    border: none;
-    display: flex;
-    width: 250px;
-    border-radius: 30px;
-    margin: 15px auto;
-    cursor: pointer;
-    border: 1px solid rgb(232, 232, 232);
-}
+
 
 .img, .butimg{
     width: 15px;
@@ -68,10 +61,11 @@ p{
 }
 
 .boxsmall {
-    box-shadow: 3px 3px 5px #493860;
+    box-shadow: 3px 3px 5px #422e5e;
     text-align: center;
     width: 350px;
     padding: 12px;
+    border: none;
     margin-bottom: 15px;
     background-color: #451f75;
     border-radius: 15px;
@@ -79,15 +73,24 @@ p{
     
 }
 
-.button:hover, .button:active{
-    background-image: linear-gradient(to bottom right, rgb(21, 6, 91), rgb(98, 67, 136),rgb(216, 218, 180));
+.button:hover{
+    /*background-image: linear-gradient(to bottom right,rgb(213, 179, 255),#faf9fc);*/
+    border: 3px solid white;
+    background-color: rgb(135, 113, 178);
     transition: 0.3s;
     width: 280px;
     padding: 5px 0;
-    border: none;
-    color: white;
+    color: rgb(255, 255, 255);
     box-shadow: 2px 3px 5px rgb(83, 81, 81);
 }
 
-
-
+.button {
+    border: none;
+    display: flex;
+    width: 250px;
+    border-radius: 30px;
+    margin: 15px auto;
+    cursor: pointer;
+    border: 1px solid rgb(232, 232, 232);
+    transition: all 0.3s ease;
+}
