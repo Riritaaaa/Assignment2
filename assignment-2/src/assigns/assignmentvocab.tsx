@@ -48,14 +48,6 @@ export default function AssignmentVocab() {
     }
     const filteredWords = words.filter((w) => w !== word);
     setWords(filteredWords);
-    setTimerForWord(word);
-  };
-  
-  const setTimerForWord = (word: Word) => {
-    const timer = setTimeout(() => {
-      handleBackToVocabClick(word);
-    }, 2000);
-   
   };
 
   const handleBackToVocabClick = (word: Word) => {
