@@ -24,6 +24,7 @@
       //path
       "baseUrl": "./src", 
       "paths": {
+        "@motion/*": ["motion/*"],
         "@assigns/*": ["assigns/*"],
       },
   },

@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
+      "@motion": path.resolve(__dirname, "src/motion"),
       "@assigns": path.resolve(__dirname, "src/assigns"),
     },
     extensions: ['.ts', '.tsx', '.js']
