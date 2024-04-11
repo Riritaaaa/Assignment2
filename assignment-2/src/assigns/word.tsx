@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Word } from "./types";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import { motion } from "framer-motion";
-
 interface Props {
   word: Word;
   index: number;
@@ -13,29 +11,25 @@ interface Props {
 const word = ({ word, index, handle, switchLock }: Props) => {
   const timerId = useRef<NodeJS.Timeout>();
   const [timerKey, setTimerKey] = useState<number>(0);
-
   useEffect(() => {
     timerId.current = setTimeout(() => {
       if (!word.isLocked) {
         handle(word);
       }
     }, 5000);
-    
     return () => {
-      clearTimeout(timerId.current);
       setTimerKey((prevKey) => prevKey + 1);
+      clearTimeout(timerId.current);
     };
   }, [word.isLocked]);
 
   return (
-    <>
-   <motion.div>
     <button className="button" key={index}>
       <div className="countdown">
         <CountdownCircleTimer
           key={timerKey}
-          isPlaying={!word.isLocked}
           duration={5}
+          isPlaying={!word.isLocked}
           size={30}
           strokeWidth={3}
           colors={["#004777", "#F7B801", "#A30000"]}
@@ -54,6 +48,7 @@ const word = ({ word, index, handle, switchLock }: Props) => {
       >
         {word.word}
       </p>
+
       <div className="butimg" onClick={() => switchLock(word)}>
         {word.isLocked ? (
           <svg viewBox="0 0 24 24" fill="rgb(135, 113, 178)">
@@ -66,8 +61,6 @@ const word = ({ word, index, handle, switchLock }: Props) => {
         )}
       </div>
     </button>
-    </motion.div>
-    </>
   );
 };
 
